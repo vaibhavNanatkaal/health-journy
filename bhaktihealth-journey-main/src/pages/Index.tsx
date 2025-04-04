@@ -541,7 +541,7 @@ const Index = () => {
                     <Link to="/contact" className="px-6 py-3 rounded-lg bg-white text-bhakti-700 font-medium hover:bg-gray-100 transition-colors duration-200 shadow-lg">
                       Schedule a Free Consultation
                     </Link>
-                    <Link to="/plans" className="px-6 py-3 rounded-lg bg-transparent border border-white/40 text-white font-medium hover:bg-white/10 transition-colors duration-200">
+                    <Link to="/#plans" className="px-6 py-3 rounded-lg bg-transparent border border-white/40 text-white font-medium hover:bg-white/10 transition-colors duration-200">
                       View Pricing Plans
                     </Link>
                   </div>

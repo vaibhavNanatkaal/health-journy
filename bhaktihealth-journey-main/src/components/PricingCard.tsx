@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
@@ -51,7 +50,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           Popular
         </div>
       )}
-      
+
       <div className={`p-6 ${popular ? 'bg-gradient-to-b from-white to-bhakti-50' : 'bg-white'}`}>
         <div className="text-center mb-6">
           <h3 className="text-xl font-semibold text-gray-800 mb-1">{title}</h3>
@@ -61,7 +60,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             <span className="text-gray-500 ml-2">{period}</span>
           </div>
         </div>
-        
+
         <ul className="space-y-3 mb-6">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
@@ -74,9 +73,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
             </li>
           ))}
         </ul>
-        
+
         <Link
-          to="/contact"
+          to="/#plans"
           className={`block text-center py-3 px-4 rounded-lg transition-colors duration-300 ${
             popular
               ? 'bg-bhakti-600 hover:bg-bhakti-700 text-white'

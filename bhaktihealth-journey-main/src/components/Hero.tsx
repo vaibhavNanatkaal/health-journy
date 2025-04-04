@@ -99,7 +99,7 @@ const Hero = () => {
             duration: 0.7,
             delay: 0.5
           }}>
-              <Link to="/plans" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-bhakti-600 text-white font-medium shadow-lg hover:bg-bhakti-700 transition-all duration-300 transform hover:-translate-y-1">
+              <Link to="/#plans" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-bhakti-600 text-white font-medium shadow-lg hover:bg-bhakti-700 transition-all duration-300 transform hover:-translate-y-1">
                 View Plans
               </Link>
               <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-bhakti-600 font-medium border border-bhakti-200 shadow-sm hover:shadow-md hover:border-bhakti-300 transition-all duration-300 transform hover:-translate-y-1">
