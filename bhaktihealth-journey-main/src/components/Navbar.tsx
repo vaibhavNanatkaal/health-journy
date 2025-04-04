@@ -58,7 +58,10 @@ const Navbar = () => {
       }} transition={{
         duration: 0.5
       }} className="flex items-center">
-          <NavLink to="/" className="text-2xl font-bold text-bhakti-700">Bhakti Health & Wellness</NavLink>
+          <NavLink to="/" className="flex items-center gap-2">
+            <img src="/Bhakti_Logo.png" alt="Bhakti Logo" className="h-8 w-8" />
+            <span className="text-2xl font-bold text-bhakti-700">Bhakti Health & Wellness</span>
+          </NavLink>
         </motion.div>
 
         {/* Desktop Navigation */}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import PageTransition from '@/components/PageTransition';
@@ -42,8 +41,8 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
               <p className="text-gray-600 mb-4">24/7 Support</p>
-              <a href="mailto:contact@bhaktihealth.com" className="text-bhakti-600 hover:text-bhakti-700 font-medium">
-                contact@bhaktihealth.com
+              <a href="mailto:dr.priankamodi5@gmail.com" className="text-bhakti-600 hover:text-bhakti-700 font-medium">
+                dr.priankamodi5@gmail.com
               </a>
             </div>
 
