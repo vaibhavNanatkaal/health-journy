@@ -1,0 +1,20 @@
+modules = ["nodejs-20", "web"]
+run = "run this program "
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "run this program "]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 41137474
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd bhaktihealth-journey-main && npm install && npm run dev"
