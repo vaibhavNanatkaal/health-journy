@@ -40,7 +40,7 @@ const Footer = () => {
       }
     }
   };
-  return <motion.footer ref={ref as React.RefObject<HTMLDivElement>} variants={containerVariants} initial="hidden" animate={isIntersecting ? "visible" : "hidden"} className="bg-gradient-to-b from-white to-bhakti-50 pt-16 pb-8">
+  return <motion.footer id="footer" ref={ref as React.RefObject<HTMLDivElement>} variants={containerVariants} initial="hidden" animate={isIntersecting ? "visible" : "hidden"} className="bg-gradient-to-b from-white to-bhakti-50 pt-16 pb-8">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <motion.div variants={itemVariants} className="space-y-4">

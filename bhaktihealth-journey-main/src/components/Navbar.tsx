@@ -12,8 +12,8 @@ const Navbar = () => {
     path: '/'
   }, {
     name: 'About',
-    path: '/#testimonials',
-    scrollTo: 'testimonials'
+    path: '/#footer',
+    scrollTo: 'footer'
   }, {
     name: 'Plans',
     path: '/#plans',
