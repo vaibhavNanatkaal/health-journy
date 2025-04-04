@@ -164,7 +164,7 @@ const Index = () => {
         </section>
         
         {/* Our Approach Section */}
-        <section className="py-20 bg-gradient-to-br from-white to-bhakti-50" id="approach">
+        <section id="about" className="py-20 bg-gradient-to-br from-white to-bhakti-50" id="approach">
           <div className="container mx-auto px-6 md:px-12">
             <div ref={approachRef.ref as React.RefObject<HTMLDivElement>} className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
               {/* Image side */}
@@ -316,7 +316,7 @@ const Index = () => {
         </section>
         
         {/* Quick Plan Preview */}
-        <section ref={planRef.ref as React.RefObject<HTMLDivElement>} className="py-20 bg-gradient-to-br from-white to-bhakti-50">
+        <section id="plans" ref={planRef.ref as React.RefObject<HTMLDivElement>} className="py-20 bg-gradient-to-br from-white to-bhakti-50">
           <div className="container mx-auto px-6 md:px-12">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <motion.span initial={{

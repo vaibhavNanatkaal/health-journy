@@ -12,14 +12,26 @@ const Navbar = () => {
     path: '/'
   }, {
     name: 'About',
-    path: '/about'
+    path: '/#about',
+    scrollTo: 'about'
   }, {
     name: 'Plans',
-    path: '/plans'
+    path: '/#plans',
+    scrollTo: 'plans'
   }, {
     name: 'Contact',
     path: '/contact'
   }];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, scrollTo?: string) => {
+    if (scrollTo && location.pathname === '/') {
+      e.preventDefault();
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -75,7 +87,7 @@ const Navbar = () => {
         duration: 0.5,
         delay: 0.2
       }} className="hidden md:flex items-center space-x-8">
-          {links.map(link => <NavLink key={link.path} to={link.path} className={({
+          {links.map(link => <NavLink key={link.path} to={link.path} onClick={(e) => handleNavClick(e, (link as any).scrollTo)} className={({
           isActive
         }) => cn("relative px-2 py-1 font-medium text-sm transition-colors duration-300", isActive ? "text-bhakti-700" : "text-gray-600 hover:text-bhakti-600")}>
               {({
