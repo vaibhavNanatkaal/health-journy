@@ -580,213 +580,124 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {/* Single Session */}
+              {/* Personal Plans */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                animate={
-                  planRef.isIntersecting
-                    ? {
-                        opacity: 1,
-                        y: 0,
-                      }
-                    : {
-                        opacity: 0,
-                        y: 30,
-                      }
-                }
-                transition={{
-                  duration: 0.6,
-                  delay: 0.1,
-                }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={planRef.isIntersecting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden"
               >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    Single Session
-                  </h3>
-                  <div className="text-bhakti-600 text-2xl font-bold mb-4">
-                    ₹700
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Personal Plan</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-gray-600">Single Session</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹500</div>
+                    </div>
+                    <div>
+                      <p className="text-gray-600">6-Month Program</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹10,000</div>
+                    </div>
+                    <div>
+                      <p className="text-gray-600">12-Month Program</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹18,000</div>
+                    </div>
                   </div>
-                  <p className="text-gray-600 mb-6">
-                    Perfect for those wanting to try our services or needing
-                    specific guidance.
-                  </p>
-
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 my-6">
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        60-minute coaching session
-                      </span>
+                      <span className="text-gray-700">1-on-1 Coaching</span>
                     </li>
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Digital session notes
-                      </span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Action plan creation
-                      </span>
+                      <span className="text-gray-700">Personalized Plan</span>
                     </li>
                   </ul>
-
                   <Link
-                    to="/plans"
+                    to="/contact"
                     className="block text-center py-2 px-4 rounded-lg bg-white border border-bhakti-300 hover:bg-bhakti-50 text-bhakti-700 transition-colors duration-200"
                   >
-                    View Details
+                    Get Started
                   </Link>
                 </div>
               </motion.div>
 
-              {/* 6-Month */}
+              {/* Group Plans */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                animate={
-                  planRef.isIntersecting
-                    ? {
-                        opacity: 1,
-                        y: 0,
-                      }
-                    : {
-                        opacity: 0,
-                        y: 30,
-                      }
-                }
-                transition={{
-                  duration: 0.6,
-                  delay: 0.2,
-                }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={planRef.isIntersecting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white rounded-xl shadow-xl border-2 border-bhakti-500 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden relative"
               >
                 <div className="absolute top-0 right-0 bg-bhakti-500 text-white px-3 py-1 text-xs font-semibold">
                   Popular
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    6-Month Program
-                  </h3>
-                  <div className="text-bhakti-600 text-2xl font-bold mb-4">
-                    $399
-                    <span className="text-sm font-normal text-gray-600">
-                      /month
-                    </span>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Group Plan (3X)</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-gray-600">Single Session</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹1,100</div>
+                    </div>
+                    <div>
+                      <p className="text-gray-600">6-Month Program</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹28,000</div>
+                    </div>
+                    <div>
+                      <p className="text-gray-600">12-Month Program</p>
+                      <div className="text-bhakti-600 text-2xl font-bold">₹50,000</div>
+                    </div>
                   </div>
-                  <p className="text-gray-600 mb-6">
-                    Comprehensive support for significant health
-                    transformations.
-                  </p>
-
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 my-6">
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Weekly coaching sessions
-                      </span>
+                      <span className="text-gray-700">Group Sessions (3 People)</span>
                     </li>
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Personalized wellness plan
-                      </span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">Nutrition guidance</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Monthly progress review
-                      </span>
+                      <span className="text-gray-700">Shared Learning Experience</span>
                     </li>
                   </ul>
-
                   <Link
-                    to="/plans"
+                    to="/contact"
                     className="block text-center py-2 px-4 rounded-lg bg-bhakti-600 hover:bg-bhakti-700 text-white transition-colors duration-200"
                   >
-                    View Details
+                    Get Started
                   </Link>
                 </div>
               </motion.div>
 
-              {/* 12-Month */}
+              {/* Corporate Plan */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                animate={
-                  planRef.isIntersecting
-                    ? {
-                        opacity: 1,
-                        y: 0,
-                      }
-                    : {
-                        opacity: 0,
-                        y: 30,
-                      }
-                }
-                transition={{
-                  duration: 0.6,
-                  delay: 0.3,
-                }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={planRef.isIntersecting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden"
               >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    12-Month Program
-                  </h3>
-                  <div className="text-bhakti-600 text-2xl font-bold mb-4">
-                    $349
-                    <span className="text-sm font-normal text-gray-600">
-                      /month
-                    </span>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Corporate Plan</h3>
                   <p className="text-gray-600 mb-6">
-                    Complete lifestyle transformation with extended support.
+                    Customized solutions for corporate wellness programs
                   </p>
-
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">Bi-weekly coaching</span>
+                      <span className="text-gray-700">Custom Team Size</span>
                     </li>
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Comprehensive health plan
-                      </span>
+                      <span className="text-gray-700">Flexible Scheduling</span>
                     </li>
                     <li className="flex items-center">
                       <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Priority email support
-                      </span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="h-5 w-5 text-bhakti-500 mr-2" />
-                      <span className="text-gray-700">
-                        Quarterly health assessments
-                      </span>
+                      <span className="text-gray-700">Progress Tracking</span>
                     </li>
                   </ul>
-
                   <Link
-                    to="/plans"
+                    to="/contact"
                     className="block text-center py-2 px-4 rounded-lg bg-white border border-bhakti-300 hover:bg-bhakti-50 text-bhakti-700 transition-colors duration-200"
                   >
-                    View Details
+                    Contact Us
                   </Link>
                 </div>
               </motion.div>
