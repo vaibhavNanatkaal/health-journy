@@ -31,8 +31,8 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
               <p className="text-gray-600 mb-4">Mon-Fri from 8am to 6pm</p>
-              <a href="tel:+1234567890" className="text-bhakti-600 hover:text-bhakti-700 font-medium">
-                +1 (234) 567-890
+              <a href="https://api.whatsapp.com/send/?phone=919998805082&text=Hello,+I+would+like+more+information+on+weightloss+and+overall+well-being&type=phone_number&app_absent=0" className="text-bhakti-600 hover:text-bhakti-700 font-medium">
+                +91 99988 05082
               </a>
             </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
 
           <div className="text-center">
             <Button asChild className="bg-bhakti-600 hover:bg-bhakti-700 text-white px-8 py-3 rounded-lg text-lg">
-              <a href="https://calendly.com">Schedule Free Consultation</a>
+              <a href="https://calendly.com/dr-priyankamodi5/30min">Schedule Free Consultation</a>
             </Button>
           </div>
         </div>
